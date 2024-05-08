@@ -1,0 +1,279 @@
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000000;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ui {
+  width: 100%;
+  height: 100%;            
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 40px;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.chat-ui {
+  display: flex;
+  flex-direction: column;
+  background: rgba(1.0, 1.0, 1.0, 0.0);
+  width: 800px;
+  height: 200px;
+  padding: 10px 10px;
+  padding-bottom: 200px;
+  border-radius: 10px;
+}
+
+.chat-ui-text-area {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.chat-text {
+  font-size: .75em;
+  text-shadow: 2px 2px 5px black;
+  color: white;
+  text-align: center;
+}
+
+.chat-text.fadeOut {
+  opacity: 1.0;
+  animation: fadeOut 5s ease-in-out forwards;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url('/resources/background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-menu h1 {
+  font-size: 3em;
+}
+
+input#yourname {
+  border-radius: 5px;
+  width: 100px;
+}
+
+label[for="yourname"] {
+  font-size: 1.5rem;
+}
+
+.main-menu {
+  font-family: "Dancing Script", cursive;
+  font-weight: 900;
+  width: 400px;
+  height: 600px;
+  background-color: rgb(130, 128, 128, 0.8);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.ranking {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background-color: rgb(130, 128, 128, 0.8);
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  color: white;
+  font-family: "Dancing Script", cursive;
+}
+
+.ranking-title {
+  font-size: 3em;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.ranking-content {
+  width: 100%;
+  height: 400px;
+  border-bottom: 1px solid white;
+}
+.ranking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.5em;
+  height: 100%;
+  color: white;
+  margin: 0;
+  overflow-y: scroll;
+  padding: 0;
+}
+
+.ranking-list .ranking-list__title {
+  top: 0;
+  width: 100%;
+  position: sticky;
+  background-color: silver;
+}
+.ranking-list::-webkit-scrollbar {
+  display: none;
+}
+
+.ranking-list li {
+  list-style: none;
+}
+
+.ranking-list span {
+  display: inline-block;
+}
+
+
+.ranking-item__index {
+  display: inline-block;
+  min-width: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.ranking-item__name {
+  width: 200px;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+
+.rank-up {
+  width: 150px;
+  height: 50px;
+  background: #000000;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 10px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.rank-up:hover {
+  background: white;
+  color: black;
+}
+
+.rank-close {
+  position: absolute;
+  width: 60px;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 10px;
+  border: 2px solid white;
+  cursor: pointer;
+  text-align: center;
+  bottom: 20px;
+}
+
+.rank-close:hover {
+  background: white;
+  color: black;
+
+}
+.start-btn {
+  width: 150px;
+  height: 50px;
+  background: #000000;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 10px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background: white;
+  color: black;
+}
+
+.infor {
+  display: none;
+}
+
+.infor-item {
+  display: flex;
+  gap: 10px;
+  font-weight: 700;
+  font-family: "Dancing Script";
+  color: silver;
+}
+
+.infor {
+  font-size: 1.5em;
+  position: fixed;
+  top: 100px;
+  right: 200px;
+}
+
+.game-over {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.game-over button {
+  width: 150px;
+  height: 50px;
+  background: #000000;
+  color: white;
+  font-size: 1.5em;
+  border-radius: 10px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1.0;
+    visibility: visible;
+  }
+  90% {
+    opacity: 1.0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0.0;
+    visibility: hidden;
+  }
+}

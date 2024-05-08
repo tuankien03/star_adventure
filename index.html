@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <title>Star Adventure</title>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="/resources/logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/base.css">
+</head>
+
+<body>
+  <div class="container" id="container">
+    <div class="infor">
+      <div class="name-infor infor-item">
+        <div class="name-infor__title">Player: </div>
+        <div class="name-infor__content"></div>
+      </div>
+
+      <div class="score-infor infor-item">
+        <div class="score-infor__title">Score: </div>
+        <div class="score-infor__content">0</div>
+      </div>
+    </div>
+
+    <div class="menu-wrapper">
+      <div class="main-menu">
+        <label for="yourname">Your Name</label>
+        <input type="text" name="yourname" id="yourname" placeholder="12 doi dep">
+        <button class="rank-up">Rank</button>
+
+        <h1>PLAY GAME</h1>
+        <button class="start-btn">EASY</button>
+        <button class="start-btn">MEDIUM</button>
+        <button class="start-btn">HARD</button>
+      </div>
+      <div id="ranking" class="ranking">
+        <h2 class="ranking-title">Rank</h2>
+        <div class="ranking-content">
+          <ul class="ranking-list">
+            <li class="ranking-item ranking-list__title">
+              <span class="ranking-item__index">Top</span>
+              <span class="ranking-item__name">Name</span>
+              <span class="ranking-item__score">Score</span>
+            </li>
+            <li class="ranking-item">
+              <span class="ranking-item__index">1</span>
+              <span class="ranking-item__name">12 đôi dép</span>
+              <span class="ranking-item__score">123123</span>
+            </li>
+            <li class="ranking-item">
+              <span class="ranking-item__index">2</span>
+              <span class="ranking-item__name">12 doi dep</span>
+              <span class="ranking-item__score">459600</span>
+            </li>
+            <li class="ranking-item">
+              <span class="ranking-item__index">3</span>
+              <span class="ranking-item__name">12 đôi dép</span>
+              <span class="ranking-item__score">0</span>
+            </li>
+            <li class="ranking-item">
+              <span class="ranking-item__index">4</span>
+              <span class="ranking-item__name">12 đôi dép</span>
+              <span class="ranking-item__score">0</span>
+            </li>
+            <li class="ranking-item">
+              <span class="ranking-item__index">5</span>
+              <span class="ranking-item__name">12 đôi dép</span>
+              <span class="ranking-item__score">0</span>
+            </li>
+            <li class="ranking-item">
+              <span class="ranking-item__index">6</span>
+              <span class="ranking-item__name">12 đôi dép</span>
+              <span class="ranking-item__score">0</span>
+            </li>
+            <li class="ranking-item">
+              <span class="ranking-item__index">7</span>
+              <span class="ranking-item__name">12 đôi dép</span>
+              <span class="ranking-item__score">0</span>
+            </li>
+            <li class="ranking-item">
+              <span class="ranking-item__index">8</span>
+              <span class="ranking-item__name">12 đôi dép</span>
+              <span class="ranking-item__score">0</span>
+            </li>
+
+            <li class="ranking-item">
+              <span class="ranking-item__index">9</span>
+              <span class="ranking-item__name">12 đôi dép</span>
+              <span class="ranking-item__score">0</span>
+            </li>
+            <li class="ranking-item">
+              <span class="ranking-item__index">10</span>
+              <span class="ranking-item__name">12 đôi dép</span>
+              <span class="ranking-item__score">0</span>
+            </li>
+            <li class="ranking-item">
+              <span class="ranking-item__index">11</span>
+              <span class="ranking-item__name">12 đôi dép</span>
+              <span class="ranking-item__score">0</span>
+            </li>
+            <li class="ranking-item">
+              <span class="ranking-item__index">12</span>
+              <span class="ranking-item__name">12 đôi dép</span>
+              <span class="ranking-item__score">0</span>
+            </li>
+          </ul>
+        </div>
+        <span class="rank-close" >Close</span>
+      </div>
+    </div>
+
+    <div class="game-over" style="display: none;">
+      <button class="restart-btn">Game Over</button>
+    </div>
+    <div class="ui" id="game-ui" style="display: none;">
+      <div class="row">
+        <div class="chat-ui">
+          <div class="chat-ui-text-area" id="chat-ui-text-area">
+            <div class="chat-text fadeOut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./ammo.js"></script>
+  <script src="./src/main.js" type="module">
+  </script>
+  
+</body>
+  
+</html>

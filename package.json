@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "vite": "^5.2.10"
+  },
+  "dependencies": {
+    "ammo": "^3.0.3",
+    "ammo.js": "github:kripken/ammo.js",
+    "ammojs": "^0.0.2",
+    "firebase": "^10.11.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "three": "^0.164.1"
+  }
+}
