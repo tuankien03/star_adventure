@@ -85,6 +85,7 @@ export const tie_fighter_controller = (() => {
     }
 
     Destroy() {
+      
       this.blasterFX_.Destroy();
       this.blasterFX_ = null;
     }
@@ -178,10 +179,12 @@ export const tie_fighter_controller = (() => {
           if (h.name == this.Parent.Name) {
             continue;
           }
+          console.log(h.name)
           const e = this.FindEntity(h.name);
           e.Broadcast({topic: 'player.hit', value: this.params_.blasterStrength});
           s.Life = 0.0;
 
+        
           const explosion = this.FindEntity('spawners').GetComponent('TinyExplosionSpawner')
           explosion.Spawn(h.position);    
         }

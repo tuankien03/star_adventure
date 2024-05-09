@@ -11,7 +11,7 @@ export const enemy_ai_controller = (() => {
   const _COLLISION_FORCE = 25;
   const _WANDER_FORCE = 1;
   const _ATTACK_FORCE = 100;
-  const _MAX_TARGET_DISTANCE = 1500;
+  const _MAX_TARGET_DISTANCE = 15000;
   const _MAX_ANGLE = 0.9;
 
   const _TMP_M0 = new THREE.Matrix4();
@@ -103,7 +103,7 @@ export const enemy_ai_controller = (() => {
 
     MaybeFire_() {
       // DEMO
-      // if (Math.random() < 1) {
+      // if (Math.random() <0.51) {
       //   this.Broadcast({topic: 'player.fire'});
       //   return;
       // }
@@ -188,7 +188,7 @@ export const enemy_ai_controller = (() => {
     AcquireTarget_() {
       const pos = this.Parent.Position;
       const enemies = this.params_.grid.FindNear(
-          [pos.x, pos.z], [1000, 1000]).filter(
+          [pos.x, pos.z], [10000, 10000]).filter(
           c => c.entity.Attributes.team == 'allies'
       );
 

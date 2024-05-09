@@ -42,7 +42,7 @@ export const player_controller = (() => {
       if (this.dead_) {
         const name_player = document.querySelector('.name-infor__content').innerHTML;
         const score = document.querySelector('.score-infor__content').innerHTML;
-        addPlayer(name_player, score, sessionStorage.getItem('level'));
+        addPlayer(name_player, parseInt(score), parseInt(sessionStorage.getItem('level')));
         const game_over = document.querySelector('.game-over');
         game_over.style.display = 'flex';
         document.querySelector('#game-ui')

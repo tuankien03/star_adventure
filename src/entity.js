@@ -24,8 +24,7 @@ export const entity = (() => {
       this.components_ = null;
       this.parent_ = null;
       this.handlers_ = null;
-      const score = document.querySelector('.score-infor__content');
-      score.innerHTML = parseInt(score.innerHTML) + 100;
+    
     }
 
     RegisterHandler_(n, h) {

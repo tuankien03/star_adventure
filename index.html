@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html>
 
 <head>
   <title>Star Adventure</title>
@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/base.css">
 </head>
 
@@ -26,15 +29,18 @@
     </div>
 
     <div class="menu-wrapper">
+     
       <div class="main-menu">
-        <label for="yourname">Your Name</label>
-        <input type="text" name="yourname" id="yourname" placeholder="12 doi dep">
-        <button class="rank-up">Rank</button>
-
-        <h1>PLAY GAME</h1>
+        <h1>STAR
+          <br>ADVENTURE
+        </h1>
+        <label for="yourname">username</label>
+        <input type="text" name="yourname" id="yourname" >
         <button class="start-btn">EASY</button>
         <button class="start-btn">MEDIUM</button>
         <button class="start-btn">HARD</button>
+        <button class="rank-up">Rank</button>
+
       </div>
       <div id="ranking" class="ranking">
         <h2 class="ranking-title">Rank</h2>
@@ -45,70 +51,19 @@
               <span class="ranking-item__name">Name</span>
               <span class="ranking-item__score">Score</span>
             </li>
-            <li class="ranking-item">
-              <span class="ranking-item__index">1</span>
-              <span class="ranking-item__name">12 đôi dép</span>
-              <span class="ranking-item__score">123123</span>
+            <li class="ranking-item ranking-list__level">
+              <span class="ranking-item__index">Easy Level</span>
             </li>
-            <li class="ranking-item">
-              <span class="ranking-item__index">2</span>
-              <span class="ranking-item__name">12 doi dep</span>
-              <span class="ranking-item__score">459600</span>
+            <li class="ranking-item ranking-list__level">
+              <span class="ranking-item__index">Medium Level</span>
             </li>
-            <li class="ranking-item">
-              <span class="ranking-item__index">3</span>
-              <span class="ranking-item__name">12 đôi dép</span>
-              <span class="ranking-item__score">0</span>
-            </li>
-            <li class="ranking-item">
-              <span class="ranking-item__index">4</span>
-              <span class="ranking-item__name">12 đôi dép</span>
-              <span class="ranking-item__score">0</span>
-            </li>
-            <li class="ranking-item">
-              <span class="ranking-item__index">5</span>
-              <span class="ranking-item__name">12 đôi dép</span>
-              <span class="ranking-item__score">0</span>
-            </li>
-            <li class="ranking-item">
-              <span class="ranking-item__index">6</span>
-              <span class="ranking-item__name">12 đôi dép</span>
-              <span class="ranking-item__score">0</span>
-            </li>
-            <li class="ranking-item">
-              <span class="ranking-item__index">7</span>
-              <span class="ranking-item__name">12 đôi dép</span>
-              <span class="ranking-item__score">0</span>
-            </li>
-            <li class="ranking-item">
-              <span class="ranking-item__index">8</span>
-              <span class="ranking-item__name">12 đôi dép</span>
-              <span class="ranking-item__score">0</span>
+            <li class="ranking-item ranking-list__level">
+              <span class="ranking-item__index">Hard Level</span>
             </li>
 
-            <li class="ranking-item">
-              <span class="ranking-item__index">9</span>
-              <span class="ranking-item__name">12 đôi dép</span>
-              <span class="ranking-item__score">0</span>
-            </li>
-            <li class="ranking-item">
-              <span class="ranking-item__index">10</span>
-              <span class="ranking-item__name">12 đôi dép</span>
-              <span class="ranking-item__score">0</span>
-            </li>
-            <li class="ranking-item">
-              <span class="ranking-item__index">11</span>
-              <span class="ranking-item__name">12 đôi dép</span>
-              <span class="ranking-item__score">0</span>
-            </li>
-            <li class="ranking-item">
-              <span class="ranking-item__index">12</span>
-              <span class="ranking-item__name">12 đôi dép</span>
-              <span class="ranking-item__score">0</span>
-            </li>
           </ul>
         </div>
-        <span class="rank-close" >Close</span>
+        <span class="rank-close">Close</span>
       </div>
     </div>
 
@@ -128,7 +83,7 @@
   <script src="./ammo.js"></script>
   <script src="./src/main.js" type="module">
   </script>
-  
+
 </body>
-  
+
 </html>

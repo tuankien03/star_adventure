@@ -77,12 +77,22 @@ body {
 }
 
 .main-menu h1 {
-  font-size: 3em;
+  font-size: 2.5em;
+  text-align: center;
 }
 
 input#yourname {
-  border-radius: 5px;
-  width: 100px;
+  border-radius: 20px;
+  width: 192px;
+  height: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  padding-left: 10px;
+  background-color: rgba(23, 145, 211, 0.8);
+
 }
 
 label[for="yourname"] {
@@ -90,11 +100,12 @@ label[for="yourname"] {
 }
 
 .main-menu {
-  font-family: "Dancing Script", cursive;
+  color: white;
+  font-family: "Press Start 2P", system-ui;
   font-weight: 900;
-  width: 400px;
+  width: 500px;
   height: 600px;
-  background-color: rgb(130, 128, 128, 0.8);
+  background-color: rgba(23, 145, 211, 0.8);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -107,14 +118,14 @@ label[for="yourname"] {
   position: relative;
   width: 400px;
   height: 600px;
-  background-color: rgb(130, 128, 128, 0.8);
+  background-color: rgba(23, 145, 211, 0.8);
   display: none;
   align-items: center;
   flex-direction: column;
   gap: 20px;
   border-radius: 10px;
   color: white;
-  font-family: "Dancing Script", cursive;
+  font-family: "Play", sans-serif;
 }
 
 .ranking-title {
@@ -144,7 +155,11 @@ label[for="yourname"] {
   top: 0;
   width: 100%;
   position: sticky;
-  background-color: silver;
+  background-color: rgb(51, 170, 255);
+}
+
+.ranking-list__level {
+  background-color: ;
 }
 .ranking-list::-webkit-scrollbar {
   display: none;
@@ -175,14 +190,15 @@ label[for="yourname"] {
 
 
 .rank-up {
-  width: 150px;
+  width: 250px;
   height: 50px;
-  background: #000000;
+  background: black;
   color: white;
   font-size: 1.5em;
-  border-radius: 10px;
+  border-radius: 50px;
   border: 2px solid white;
   cursor: pointer;
+  font-family: "Press Start 2P", system-ui;;
 }
 
 .rank-up:hover {
@@ -200,6 +216,7 @@ label[for="yourname"] {
   cursor: pointer;
   text-align: center;
   bottom: 20px;
+  padding: 5px;
 }
 
 .rank-close:hover {
@@ -208,14 +225,15 @@ label[for="yourname"] {
 
 }
 .start-btn {
-  width: 150px;
+  width: 250px;
   height: 50px;
-  background: #000000;
+  background: #0138a5;
   color: white;
   font-size: 1.5em;
-  border-radius: 10px;
+  border-radius: 50px;
   border: 2px solid white;
   cursor: pointer;
+  font-family: "Press Start 2P", system-ui;;
 }
 
 .start-btn:hover {
@@ -231,7 +249,8 @@ label[for="yourname"] {
   display: flex;
   gap: 10px;
   font-weight: 700;
-  font-family: "Dancing Script";
+  font-size: 0.6em;
+  font-family: "Press Start 2P", system-ui;
   color: silver;
 }
 
@@ -241,6 +260,8 @@ label[for="yourname"] {
   top: 100px;
   right: 200px;
 }
+
+
 
 .game-over {
   position: fixed;
@@ -253,13 +274,12 @@ label[for="yourname"] {
 }
 
 .game-over button {
-  width: 150px;
-  height: 50px;
-  background: #000000;
-  color: white;
-  font-size: 1.5em;
-  border-radius: 10px;
-  border: 2px solid white;
+  height: 150px;
+  background-color: rgb(56, 56, 56);
+  padding: 0 30px;
+  color: red;
+  font-size: 2em;
+  font-family: "Press Start 2P", system-ui;
   cursor: pointer;
 }
 

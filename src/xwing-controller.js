@@ -91,6 +91,8 @@ export const xwing_controller = (() => {
     }
 
     Destroy() {
+      const score = document.querySelector('.score-infor__content');
+      score.innerHTML = parseInt(score.innerHTML) + 100;
       this.blasterFX_.Destroy();
       this.blasterFX_ = null;
     }
